@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useMemo, useReducer, useState } from 'react';
+import { createContext, useContext, useEffect, useMemo, useReducer } from 'react';
 import { EventPlayer, Game, Player } from '../../model/models';
 import { findAll } from '../../service/OhanaGamesService';
 

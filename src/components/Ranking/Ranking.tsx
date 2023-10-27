@@ -13,8 +13,8 @@ const Ranking: React.FC = memo(() => {
   const calculateRankingRows = () => {
     const rankingMap = new Map();
 
-    eventPlayers.forEach((eventPlayer) => {
-      const { playerId, isWinner, eventId } = eventPlayer;
+    eventPlayers.forEach((eventPlayer:any) => {
+      const { playerId, isWinner } = eventPlayer;
 
       if (!rankingMap.has(playerId)) {
         rankingMap.set(playerId, {
